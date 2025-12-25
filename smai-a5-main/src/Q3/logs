@@ -1,0 +1,277 @@
+Using device: cuda
+
+========================================
+Evaluating Repository: facebook_react
+========================================
+Train set size: 208
+Test set size: 52
+Train period: 2013-05-29 00:00:00 to 2013-12-22 00:00:00
+Test period: 2013-12-23 00:00:00 to 2014-02-12 00:00:00
+Train set size: 156
+Test set size: 52
+Train period: 2013-05-29 00:00:00 to 2013-10-31 00:00:00
+Test period: 2013-11-01 00:00:00 to 2013-12-22 00:00:00
+
+--- Processing ARMA ---
+ARMA(2, 0, 1) Model Summary:
+                               SARIMAX Results                                
+==============================================================================
+Dep. Variable:      stars_transformed   No. Observations:                  156
+Model:                 ARIMA(2, 0, 1)   Log Likelihood                -807.227
+Date:                Fri, 21 Nov 2025   AIC                           1624.454
+Time:                        16:08:17   BIC                           1639.704
+Sample:                    05-29-2013   HQIC                          1630.648
+                         - 10-31-2013                                         
+Covariance Type:                  opg                                         
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         15.0436     18.591      0.809      0.418     -21.394      51.481
+ar.L1         -0.3391      0.077     -4.408      0.000      -0.490      -0.188
+ar.L2          0.5987      0.040     15.096      0.000       0.521       0.676
+ma.L1          0.8484      0.124      6.839      0.000       0.605       1.092
+sigma2      1818.0351    113.913     15.960      0.000    1594.770    2041.300
+===================================================================================
+Ljung-Box (L1) (Q):                   0.17   Jarque-Bera (JB):             47184.91
+Prob(Q):                              0.68   Prob(JB):                         0.00
+Heteroskedasticity (H):               0.01   Skew:                             7.61
+Prob(H) (two-sided):                  0.00   Kurtosis:                        86.83
+===================================================================================
+
+Warnings:
+[1] Covariance matrix calculated using the outer product of gradients (complex-step).
+ARMA Full Set MAE: 11.0983 | RMSE: 17.1323
+  ARMA RMSE (H=1): 64.4891
+  ARMA RMSE (H=3): 40.4159
+  ARMA RMSE (H=7): 27.6771
+  ARMA RMSE (H=14): 24.8673
+  ARMA RMSE (H=30): 19.4805
+Saved plot: forecast_facebook_react_ARMA_30-Day.png
+
+--- Processing RNN ---
+Training model on cuda...
+Epoch 1/30, Train Loss: 0.0031, Val Loss: 0.0057
+Epoch 2/30, Train Loss: 0.0008, Val Loss: 0.0087
+Epoch 3/30, Train Loss: 0.0008, Val Loss: 0.0060
+Epoch 4/30, Train Loss: 0.0001, Val Loss: 0.0046
+Epoch 5/30, Train Loss: 0.0003, Val Loss: 0.0044
+Epoch 6/30, Train Loss: 0.0003, Val Loss: 0.0047
+Epoch 7/30, Train Loss: 0.0001, Val Loss: 0.0055
+Epoch 8/30, Train Loss: 0.0001, Val Loss: 0.0058
+Epoch 9/30, Train Loss: 0.0001, Val Loss: 0.0056
+Epoch 10/30, Train Loss: 0.0001, Val Loss: 0.0052
+Epoch 11/30, Train Loss: 0.0001, Val Loss: 0.0049
+Epoch 12/30, Train Loss: 0.0001, Val Loss: 0.0050
+Epoch 13/30, Train Loss: 0.0001, Val Loss: 0.0052
+Epoch 14/30, Train Loss: 0.0001, Val Loss: 0.0053
+Epoch 15/30, Train Loss: 0.0001, Val Loss: 0.0053
+Epoch 16/30, Train Loss: 0.0001, Val Loss: 0.0052
+Epoch 17/30, Train Loss: 0.0001, Val Loss: 0.0051
+Epoch 18/30, Train Loss: 0.0001, Val Loss: 0.0052
+Epoch 19/30, Train Loss: 0.0001, Val Loss: 0.0052
+Epoch 20/30, Train Loss: 0.0001, Val Loss: 0.0053
+Epoch 21/30, Train Loss: 0.0001, Val Loss: 0.0052
+Epoch 22/30, Train Loss: 0.0001, Val Loss: 0.0052
+Epoch 23/30, Train Loss: 0.0001, Val Loss: 0.0051
+Epoch 24/30, Train Loss: 0.0001, Val Loss: 0.0052
+Epoch 25/30, Train Loss: 0.0001, Val Loss: 0.0052
+Epoch 26/30, Train Loss: 0.0001, Val Loss: 0.0052
+Epoch 27/30, Train Loss: 0.0001, Val Loss: 0.0052
+Epoch 28/30, Train Loss: 0.0001, Val Loss: 0.0052
+Epoch 29/30, Train Loss: 0.0001, Val Loss: 0.0052
+Epoch 30/30, Train Loss: 0.0001, Val Loss: 0.0052
+Training complete.
+RNN Single-step MAE: 12.4971 | RMSE: 17.9879
+  RNN RMSE (H=1): 1.1740
+  RNN RMSE (H=3): 4.9249
+  RNN RMSE (H=7): 8.6228
+  RNN RMSE (H=14): 6.5395
+  RNN RMSE (H=30): 5.9006
+Saved plot: forecast_facebook_react_RNN_30-Day.png
+
+--- Processing CNN ---
+Training model on cuda...
+Epoch 1/30, Train Loss: 0.0049, Val Loss: 0.0062
+Epoch 2/30, Train Loss: 0.0030, Val Loss: 0.0095
+Epoch 3/30, Train Loss: 0.0019, Val Loss: 0.0056
+Epoch 4/30, Train Loss: 0.0006, Val Loss: 0.0040
+Epoch 5/30, Train Loss: 0.0004, Val Loss: 0.0069
+Epoch 6/30, Train Loss: 0.0005, Val Loss: 0.0055
+Epoch 7/30, Train Loss: 0.0002, Val Loss: 0.0043
+Epoch 8/30, Train Loss: 0.0002, Val Loss: 0.0057
+Epoch 9/30, Train Loss: 0.0002, Val Loss: 0.0056
+Epoch 10/30, Train Loss: 0.0001, Val Loss: 0.0047
+Epoch 11/30, Train Loss: 0.0001, Val Loss: 0.0053
+Epoch 12/30, Train Loss: 0.0001, Val Loss: 0.0054
+Epoch 13/30, Train Loss: 0.0001, Val Loss: 0.0050
+Epoch 14/30, Train Loss: 0.0001, Val Loss: 0.0051
+Epoch 15/30, Train Loss: 0.0001, Val Loss: 0.0053
+Epoch 16/30, Train Loss: 0.0001, Val Loss: 0.0050
+Epoch 17/30, Train Loss: 0.0001, Val Loss: 0.0051
+Epoch 18/30, Train Loss: 0.0001, Val Loss: 0.0053
+Epoch 19/30, Train Loss: 0.0001, Val Loss: 0.0050
+Epoch 20/30, Train Loss: 0.0001, Val Loss: 0.0053
+Epoch 21/30, Train Loss: 0.0001, Val Loss: 0.0051
+Epoch 22/30, Train Loss: 0.0001, Val Loss: 0.0051
+Epoch 23/30, Train Loss: 0.0001, Val Loss: 0.0052
+Epoch 24/30, Train Loss: 0.0001, Val Loss: 0.0052
+Epoch 25/30, Train Loss: 0.0001, Val Loss: 0.0051
+Epoch 26/30, Train Loss: 0.0001, Val Loss: 0.0053
+Epoch 27/30, Train Loss: 0.0001, Val Loss: 0.0050
+Epoch 28/30, Train Loss: 0.0001, Val Loss: 0.0053
+Epoch 29/30, Train Loss: 0.0001, Val Loss: 0.0051
+Epoch 30/30, Train Loss: 0.0001, Val Loss: 0.0051
+Training complete.
+CNN Single-step MAE: 12.1725 | RMSE: 17.7407
+  CNN RMSE (H=1): 1.8538
+  CNN RMSE (H=3): 4.6991
+  CNN RMSE (H=7): 8.4187
+  CNN RMSE (H=14): 6.4325
+  CNN RMSE (H=30): 5.8415
+Saved plot: forecast_facebook_react_CNN_30-Day.png
+Generating Error vs Horizon plot for facebook_react...
+Saved plot: error_vs_horizon_facebook_react.png
+
+========================================
+Evaluating Repository: pallets_flask
+========================================
+Train set size: 788
+Test set size: 197
+Train period: 2010-04-06 00:00:00 to 2012-06-01 00:00:00
+Test period: 2012-06-02 00:00:00 to 2012-12-15 00:00:00
+Train set size: 591
+Test set size: 197
+Train period: 2010-04-06 00:00:00 to 2011-11-17 00:00:00
+Test period: 2011-11-18 00:00:00 to 2012-06-01 00:00:00
+
+--- Processing ARMA ---
+ARMA(2, 0, 1) Model Summary:
+                               SARIMAX Results                                
+==============================================================================
+Dep. Variable:      stars_transformed   No. Observations:                  591
+Model:                 ARIMA(2, 0, 1)   Log Likelihood               -3289.290
+Date:                Fri, 21 Nov 2025   AIC                           6588.580
+Time:                        16:09:00   BIC                           6610.489
+Sample:                    04-06-2010   HQIC                          6597.114
+                         - 11-17-2011                                         
+Covariance Type:                  opg                                         
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          6.7626     47.092      0.144      0.886     -85.536      99.061
+ar.L1         -0.3422      0.303     -1.129      0.259      -0.936       0.252
+ar.L2          0.2283      0.048      4.768      0.000       0.134       0.322
+ma.L1          0.5477      0.296      1.847      0.065      -0.033       1.129
+sigma2      3997.0030    186.239     21.462      0.000    3631.982    4362.024
+===================================================================================
+Ljung-Box (L1) (Q):                  22.88   Jarque-Bera (JB):           6529818.46
+Prob(Q):                              0.00   Prob(JB):                         0.00
+Heteroskedasticity (H):               0.00   Skew:                            21.63
+Prob(H) (two-sided):                  0.00   Kurtosis:                       516.13
+===================================================================================
+
+Warnings:
+[1] Covariance matrix calculated using the outer product of gradients (complex-step).
+ARMA Full Set MAE: 5.8640 | RMSE: 5.9576
+  ARMA RMSE (H=1): 2.6105
+  ARMA RMSE (H=3): 4.6937
+  ARMA RMSE (H=7): 4.2120
+  ARMA RMSE (H=14): 4.8904
+  ARMA RMSE (H=30): 5.0411
+Saved plot: forecast_pallets_flask_ARMA_30-Day.png
+
+--- Processing RNN ---
+Training model on cuda...
+Epoch 1/30, Train Loss: 0.0017, Val Loss: 0.0003
+Epoch 2/30, Train Loss: 0.0002, Val Loss: 0.0001
+Epoch 3/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 4/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 5/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 6/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 7/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 8/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 9/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 10/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 11/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 12/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 13/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 14/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 15/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 16/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 17/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 18/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 19/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 20/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 21/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 22/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 23/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 24/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 25/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 26/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 27/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 28/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 29/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 30/30, Train Loss: 0.0000, Val Loss: 0.0000
+Training complete.
+RNN Single-step MAE: 3.2301 | RMSE: 3.3577
+  RNN RMSE (H=1): 0.0680
+  RNN RMSE (H=3): 2.5285
+  RNN RMSE (H=7): 2.2785
+  RNN RMSE (H=14): 2.2414
+  RNN RMSE (H=30): 2.3322
+Saved plot: forecast_pallets_flask_RNN_30-Day.png
+
+--- Processing CNN ---
+Training model on cuda...
+Epoch 1/30, Train Loss: 0.0021, Val Loss: 0.0001
+Epoch 2/30, Train Loss: 0.0001, Val Loss: 0.0001
+Epoch 3/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 4/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 5/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 6/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 7/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 8/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 9/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 10/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 11/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 12/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 13/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 14/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 15/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 16/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 17/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 18/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 19/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 20/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 21/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 22/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 23/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 24/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 25/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 26/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 27/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 28/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 29/30, Train Loss: 0.0000, Val Loss: 0.0000
+Epoch 30/30, Train Loss: 0.0000, Val Loss: 0.0000
+Training complete.
+CNN Single-step MAE: 3.1522 | RMSE: 3.2822
+  CNN RMSE (H=1): 0.1609
+  CNN RMSE (H=3): 2.3791
+  CNN RMSE (H=7): 2.1852
+  CNN RMSE (H=14): 2.1505
+  CNN RMSE (H=30): 2.2697
+Saved plot: forecast_pallets_flask_CNN_30-Day.png
+Generating Error vs Horizon plot for pallets_flask...
+Saved plot: error_vs_horizon_pallets_flask.png
+
+
+--- Final Summary ---
+    Repository Model  MAE (Single-step)  RMSE (Single-step)  RMSE (H=1)  RMSE (H=3)  RMSE (H=7)  RMSE (H=14)  RMSE (H=30)
+facebook_react  ARMA          11.098304           17.132339   64.489116   40.415934   27.677055    24.867284    19.480500
+facebook_react   RNN          12.497143           17.987949    1.174001    4.924925    8.622765     6.539455     5.900596
+facebook_react   CNN          12.172453           17.740737    1.853752    4.699134    8.418690     6.432495     5.841506
+ pallets_flask  ARMA           5.864044            5.957610    2.610493    4.693675    4.211971     4.890443     5.041087
+ pallets_flask   RNN           3.230105            3.357691    0.068041    2.528548    2.278534     2.241422     2.332213
+ pallets_flask   CNN           3.152245            3.282175    0.160902    2.379067    2.185193     2.150511     2.269682
+
+Results saved to 'forecasting_summary_metrics.csv'

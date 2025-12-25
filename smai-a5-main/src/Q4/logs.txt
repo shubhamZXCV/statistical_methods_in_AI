@@ -1,0 +1,270 @@
+Number of training batches: 469
+Number of test batches: 79
+Starting Task 4.6: Beta-VAE Experiments...
+
+--- Training with Beta = 0.1 ---
+Beta 0.1, Epoch 1, Loss: 263.8266
+  BCE: 259.1673, KLD: 46.5928
+Beta 0.1, Epoch 2, Loss: 232.4818
+  BCE: 227.5472, KLD: 49.3458
+Beta 0.1, Epoch 3, Loss: 226.9670
+  BCE: 222.0900, KLD: 48.7694
+Beta 0.1, Epoch 4, Loss: 224.3027
+  BCE: 219.4571, KLD: 48.4555
+Beta 0.1, Epoch 5, Loss: 222.7465
+  BCE: 217.9079, KLD: 48.3858
+Beta 0.1, Epoch 6, Loss: 221.7281
+  BCE: 216.8912, KLD: 48.3694
+Beta 0.1, Epoch 7, Loss: 220.9536
+  BCE: 216.1197, KLD: 48.3397
+Beta 0.1, Epoch 8, Loss: 220.3934
+  BCE: 215.5666, KLD: 48.2683
+Beta 0.1, Epoch 9, Loss: 219.9463
+  BCE: 215.1179, KLD: 48.2832
+Beta 0.1, Epoch 10, Loss: 219.5695
+  BCE: 214.7420, KLD: 48.2753
+Beta 0.1, Epoch 11, Loss: 219.2246
+  BCE: 214.4043, KLD: 48.2036
+Beta 0.1, Epoch 12, Loss: 218.9542
+  BCE: 214.1373, KLD: 48.1685
+Beta 0.1, Epoch 13, Loss: 218.7513
+  BCE: 213.9346, KLD: 48.1663
+Beta 0.1, Epoch 14, Loss: 218.5025
+  BCE: 213.6852, KLD: 48.1730
+Beta 0.1, Epoch 15, Loss: 218.3279
+  BCE: 213.5146, KLD: 48.1333
+Beta 0.1, Epoch 16, Loss: 218.1506
+  BCE: 213.3346, KLD: 48.1607
+Beta 0.1, Epoch 17, Loss: 218.0149
+  BCE: 213.2068, KLD: 48.0803
+Beta 0.1, Epoch 18, Loss: 217.8628
+  BCE: 213.0507, KLD: 48.1208
+Beta 0.1, Epoch 19, Loss: 217.7243
+  BCE: 212.9166, KLD: 48.0775
+Beta 0.1, Epoch 20, Loss: 217.5892
+  BCE: 212.7877, KLD: 48.0156
+Beta 0.1, Epoch 21, Loss: 217.5146
+  BCE: 212.7105, KLD: 48.0407
+Beta 0.1, Epoch 22, Loss: 217.4092
+  BCE: 212.6073, KLD: 48.0182
+Beta 0.1, Epoch 23, Loss: 217.3079
+  BCE: 212.5092, KLD: 47.9862
+Beta 0.1, Epoch 24, Loss: 217.2073
+  BCE: 212.4064, KLD: 48.0093
+Beta 0.1, Epoch 25, Loss: 217.1305
+  BCE: 212.3273, KLD: 48.0316
+Beta 0.1, Epoch 26, Loss: 217.0294
+  BCE: 212.2324, KLD: 47.9697
+Beta 0.1, Epoch 27, Loss: 216.9882
+  BCE: 212.1959, KLD: 47.9231
+Beta 0.1, Epoch 28, Loss: 216.9089
+  BCE: 212.1148, KLD: 47.9408
+Beta 0.1, Epoch 29, Loss: 216.8403
+  BCE: 212.0483, KLD: 47.9195
+Beta 0.1, Epoch 30, Loss: 216.7848
+  BCE: 211.9975, KLD: 47.8731
+Evaluating Beta=0.1...
+Reconstruction plot saved to 'recon_beta_0.1.png'
+Saved visualization to 'fid_generated_samples_beta_0.1.png'
+FID Score (Beta=0.1): 1.3386
+
+--- Training with Beta = 0.5 ---
+Beta 0.5, Epoch 1, Loss: 275.8770
+  BCE: 265.1275, KLD: 21.4991
+Beta 0.5, Epoch 2, Loss: 246.7348
+  BCE: 235.0755, KLD: 23.3186
+Beta 0.5, Epoch 3, Loss: 240.9926
+  BCE: 229.2405, KLD: 23.5042
+Beta 0.5, Epoch 4, Loss: 238.1722
+  BCE: 226.3348, KLD: 23.6747
+Beta 0.5, Epoch 5, Loss: 236.4351
+  BCE: 224.5153, KLD: 23.8397
+Beta 0.5, Epoch 6, Loss: 235.3148
+  BCE: 223.3321, KLD: 23.9653
+Beta 0.5, Epoch 7, Loss: 234.4960
+  BCE: 222.4621, KLD: 24.0679
+Beta 0.5, Epoch 8, Loss: 233.8828
+  BCE: 221.8064, KLD: 24.1530
+Beta 0.5, Epoch 9, Loss: 233.3564
+  BCE: 221.2248, KLD: 24.2633
+Beta 0.5, Epoch 10, Loss: 232.9504
+  BCE: 220.7824, KLD: 24.3361
+Beta 0.5, Epoch 11, Loss: 232.6059
+  BCE: 220.4149, KLD: 24.3821
+Beta 0.5, Epoch 12, Loss: 232.2999
+  BCE: 220.0749, KLD: 24.4501
+Beta 0.5, Epoch 13, Loss: 232.0607
+  BCE: 219.8172, KLD: 24.4870
+Beta 0.5, Epoch 14, Loss: 231.8140
+  BCE: 219.5595, KLD: 24.5089
+Beta 0.5, Epoch 15, Loss: 231.5547
+  BCE: 219.3080, KLD: 24.4935
+Beta 0.5, Epoch 16, Loss: 231.3956
+  BCE: 219.1411, KLD: 24.5091
+Beta 0.5, Epoch 17, Loss: 231.2503
+  BCE: 219.0005, KLD: 24.4995
+Beta 0.5, Epoch 18, Loss: 231.0802
+  BCE: 218.8216, KLD: 24.5171
+Beta 0.5, Epoch 19, Loss: 230.9163
+  BCE: 218.6773, KLD: 24.4780
+Beta 0.5, Epoch 20, Loss: 230.7942
+  BCE: 218.5533, KLD: 24.4818
+Beta 0.5, Epoch 21, Loss: 230.6712
+  BCE: 218.4362, KLD: 24.4700
+Beta 0.5, Epoch 22, Loss: 230.5811
+  BCE: 218.3326, KLD: 24.4971
+Beta 0.5, Epoch 23, Loss: 230.4232
+  BCE: 218.1991, KLD: 24.4482
+Beta 0.5, Epoch 24, Loss: 230.3797
+  BCE: 218.1485, KLD: 24.4623
+Beta 0.5, Epoch 25, Loss: 230.2830
+  BCE: 218.0584, KLD: 24.4492
+Beta 0.5, Epoch 26, Loss: 230.1687
+  BCE: 217.9544, KLD: 24.4287
+Beta 0.5, Epoch 27, Loss: 230.1003
+  BCE: 217.8783, KLD: 24.4440
+Beta 0.5, Epoch 28, Loss: 230.0456
+  BCE: 217.8352, KLD: 24.4207
+Beta 0.5, Epoch 29, Loss: 229.9295
+  BCE: 217.7148, KLD: 24.4294
+Beta 0.5, Epoch 30, Loss: 229.8443
+  BCE: 217.6485, KLD: 24.3917
+Evaluating Beta=0.5...
+Reconstruction plot saved to 'recon_beta_0.5.png'
+Saved visualization to 'fid_generated_samples_beta_0.5.png'
+FID Score (Beta=0.5): 0.5898
+
+--- Training with Beta = 1.0 ---
+Beta 1.0, Epoch 1, Loss: 286.3171
+  BCE: 271.8029, KLD: 14.5143
+Beta 1.0, Epoch 2, Loss: 257.0279
+  BCE: 240.8332, KLD: 16.1947
+Beta 1.0, Epoch 3, Loss: 250.9970
+  BCE: 234.8924, KLD: 16.1045
+Beta 1.0, Epoch 4, Loss: 248.0347
+  BCE: 231.8812, KLD: 16.1535
+Beta 1.0, Epoch 5, Loss: 246.2333
+  BCE: 230.0013, KLD: 16.2319
+Beta 1.0, Epoch 6, Loss: 245.1383
+  BCE: 228.8072, KLD: 16.3310
+Beta 1.0, Epoch 7, Loss: 244.2894
+  BCE: 227.9016, KLD: 16.3878
+Beta 1.0, Epoch 8, Loss: 243.6435
+  BCE: 227.2231, KLD: 16.4204
+Beta 1.0, Epoch 9, Loss: 243.1921
+  BCE: 226.7491, KLD: 16.4430
+Beta 1.0, Epoch 10, Loss: 242.7288
+  BCE: 226.3006, KLD: 16.4282
+Beta 1.0, Epoch 11, Loss: 242.3636
+  BCE: 225.9173, KLD: 16.4463
+Beta 1.0, Epoch 12, Loss: 242.0718
+  BCE: 225.6381, KLD: 16.4337
+Beta 1.0, Epoch 13, Loss: 241.7652
+  BCE: 225.3563, KLD: 16.4088
+Beta 1.0, Epoch 14, Loss: 241.5378
+  BCE: 225.1581, KLD: 16.3797
+Beta 1.0, Epoch 15, Loss: 241.3127
+  BCE: 224.9011, KLD: 16.4116
+Beta 1.0, Epoch 16, Loss: 241.1127
+  BCE: 224.7033, KLD: 16.4094
+Beta 1.0, Epoch 17, Loss: 240.9152
+  BCE: 224.5680, KLD: 16.3472
+Beta 1.0, Epoch 18, Loss: 240.7658
+  BCE: 224.4122, KLD: 16.3536
+Beta 1.0, Epoch 19, Loss: 240.6065
+  BCE: 224.2520, KLD: 16.3546
+Beta 1.0, Epoch 20, Loss: 240.4457
+  BCE: 224.1175, KLD: 16.3282
+Beta 1.0, Epoch 21, Loss: 240.3353
+  BCE: 224.0209, KLD: 16.3144
+Beta 1.0, Epoch 22, Loss: 240.2153
+  BCE: 223.9114, KLD: 16.3039
+Beta 1.0, Epoch 23, Loss: 240.0656
+  BCE: 223.7805, KLD: 16.2851
+Beta 1.0, Epoch 24, Loss: 239.9587
+  BCE: 223.6889, KLD: 16.2698
+Beta 1.0, Epoch 25, Loss: 239.8293
+  BCE: 223.5877, KLD: 16.2416
+Beta 1.0, Epoch 26, Loss: 239.7888
+  BCE: 223.5355, KLD: 16.2533
+Beta 1.0, Epoch 27, Loss: 239.6752
+  BCE: 223.4412, KLD: 16.2340
+Beta 1.0, Epoch 28, Loss: 239.5289
+  BCE: 223.3121, KLD: 16.2168
+Beta 1.0, Epoch 29, Loss: 239.4549
+  BCE: 223.2548, KLD: 16.2001
+Beta 1.0, Epoch 30, Loss: 239.4466
+  BCE: 223.2356, KLD: 16.2110
+Evaluating Beta=1.0...
+Reconstruction plot saved to 'recon_beta_1.0.png'
+Saved visualization to 'fid_generated_samples_beta_1.0.png'
+FID Score (Beta=1.0): 0.4074
+
+--- Training with Beta = 2.0 ---
+Beta 2.0, Epoch 1, Loss: 296.4737
+  BCE: 278.4158, KLD: 9.0289
+Beta 2.0, Epoch 2, Loss: 267.9614
+  BCE: 248.3484, KLD: 9.8065
+Beta 2.0, Epoch 3, Loss: 262.8233
+  BCE: 242.9205, KLD: 9.9514
+Beta 2.0, Epoch 4, Loss: 260.1980
+  BCE: 239.9864, KLD: 10.1058
+Beta 2.0, Epoch 5, Loss: 258.7725
+  BCE: 238.2225, KLD: 10.2750
+Beta 2.0, Epoch 6, Loss: 257.7039
+  BCE: 236.9821, KLD: 10.3609
+Beta 2.0, Epoch 7, Loss: 256.9373
+  BCE: 236.0451, KLD: 10.4461
+Beta 2.0, Epoch 8, Loss: 256.2571
+  BCE: 235.2937, KLD: 10.4817
+Beta 2.0, Epoch 9, Loss: 255.7408
+  BCE: 234.7474, KLD: 10.4967
+Beta 2.0, Epoch 10, Loss: 255.2701
+  BCE: 234.1980, KLD: 10.5361
+Beta 2.0, Epoch 11, Loss: 254.8534
+  BCE: 233.7948, KLD: 10.5293
+Beta 2.0, Epoch 12, Loss: 254.4763
+  BCE: 233.4140, KLD: 10.5311
+Beta 2.0, Epoch 13, Loss: 254.2297
+  BCE: 233.1627, KLD: 10.5335
+Beta 2.0, Epoch 14, Loss: 253.9430
+  BCE: 232.8791, KLD: 10.5320
+Beta 2.0, Epoch 15, Loss: 253.7358
+  BCE: 232.6568, KLD: 10.5395
+Beta 2.0, Epoch 16, Loss: 253.4656
+  BCE: 232.4363, KLD: 10.5146
+Beta 2.0, Epoch 17, Loss: 253.3154
+  BCE: 232.2422, KLD: 10.5366
+Beta 2.0, Epoch 18, Loss: 253.0804
+  BCE: 232.0367, KLD: 10.5219
+Beta 2.0, Epoch 19, Loss: 252.9487
+  BCE: 231.8994, KLD: 10.5247
+Beta 2.0, Epoch 20, Loss: 252.7741
+  BCE: 231.7340, KLD: 10.5200
+Beta 2.0, Epoch 21, Loss: 252.6731
+  BCE: 231.6170, KLD: 10.5280
+Beta 2.0, Epoch 22, Loss: 252.5558
+  BCE: 231.4998, KLD: 10.5280
+Beta 2.0, Epoch 23, Loss: 252.4092
+  BCE: 231.3760, KLD: 10.5166
+Beta 2.0, Epoch 24, Loss: 252.2939
+  BCE: 231.2779, KLD: 10.5080
+Beta 2.0, Epoch 25, Loss: 252.1976
+  BCE: 231.1524, KLD: 10.5226
+Beta 2.0, Epoch 26, Loss: 252.1001
+  BCE: 231.0890, KLD: 10.5056
+Beta 2.0, Epoch 27, Loss: 251.9930
+  BCE: 230.9868, KLD: 10.5031
+Beta 2.0, Epoch 28, Loss: 251.9843
+  BCE: 230.9467, KLD: 10.5188
+Beta 2.0, Epoch 29, Loss: 251.9297
+  BCE: 230.8785, KLD: 10.5256
+Beta 2.0, Epoch 30, Loss: 251.7702
+  BCE: 230.7478, KLD: 10.5112
+Evaluating Beta=2.0...
+Reconstruction plot saved to 'recon_beta_2.0.png'
+Saved visualization to 'fid_generated_samples_beta_2.0.png'
+FID Score (Beta=2.0): 0.4097
+
+Starting Task 4.8: Frozen Latent Parameters...
+Frozen parameter experiment saved to 'frozen_parameters_experiment.png'

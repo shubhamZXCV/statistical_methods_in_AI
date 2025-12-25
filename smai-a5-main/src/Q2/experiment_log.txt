@@ -1,0 +1,48 @@
+=== Experiment Log ===
+Starting Hyperparameter Tuning (Parsimony Analysis)...
+
+--- Training with History Length p=1 ---
+Finished p=1. Params: 4513 | Best Val MSE: 1.012156
+
+--- Training with History Length p=2 ---
+Finished p=2. Params: 4513 | Best Val MSE: 1.001688
+
+--- Training with History Length p=3 ---
+Finished p=3. Params: 4513 | Best Val MSE: 0.999781
+
+--- Training with History Length p=5 ---
+Finished p=5. Params: 4513 | Best Val MSE: 0.976300
+
+--- Training with History Length p=8 ---
+Finished p=8. Params: 4513 | Best Val MSE: 0.950522
+
+--- Training with History Length p=10 ---
+Finished p=10. Params: 4513 | Best Val MSE: 0.957685
+
+--- Training with History Length p=15 ---
+Finished p=15. Params: 4513 | Best Val MSE: 0.959649
+
+--- Training with History Length p=20 ---
+Finished p=20. Params: 4513 | Best Val MSE: 0.955091
+
+Tuning complete. Results saved to tuning_results.csv
+RECOMMENDATION: Best history length is p=8
+
+=== Analytical Identification using Best p=8 ===
+Identified Recurrence Relation:
+x[k] = (-0.0751 * x[k-8]) + (0.1550 * x[k-7]) + (0.0903 * x[k-6]) + (-0.0749 * x[k-5]) + (-0.0636 * x[k-4]) + (-0.0435 * x[k-3]) + (-0.0415 * x[k-2]) + (0.0332 * x[k-1]) + (0.0029 * x[k-8]^2) + (-0.0011 * x[k-8] x[k-5]) + (-0.0012 * x[k-8] x[k-4]) + (-0.0040 * x[k-8] x[k-1]) + (-0.0030 * x[k-7] x[k-5]) + (0.0040 * x[k-7] x[k-4]) + (0.0016 * x[k-7] x[k-3]) + (-0.0013 * x[k-7] x[k-2]) + (0.0072 * x[k-7] x[k-1]) + (0.0030 * x[k-6] x[k-5]) + (0.0011 * x[k-6] x[k-3]) + (0.0060 * x[k-6] x[k-2]) + (-0.0035 * x[k-6] x[k-1]) + (-0.0060 * x[k-5]^2) + (-0.0055 * x[k-5] x[k-4]) + (0.0035 * x[k-5] x[k-3]) + (0.0032 * x[k-5] x[k-2]) + (0.0063 * x[k-5] x[k-1]) + (0.0017 * x[k-4]^2) + (-0.0076 * x[k-4] x[k-3]) + (-0.0027 * x[k-4] x[k-2]) + (0.0062 * x[k-3]^2) + (0.0064 * x[k-3] x[k-2]) + (0.0036 * x[k-3] x[k-1]) + (-0.0043 * x[k-2]^2) + (0.0020 * x[k-2] x[k-1]) + (-0.0048 * x[k-1]^2)
+Saved complexity_accuracy_tradeoff.png
+
+=== Analytical Identification using Best p=8 ===
+Identified Recurrence Relation:
+x[k] = (-0.0751 * x[k-8]) + (0.1550 * x[k-7]) + (0.0903 * x[k-6]) + (-0.0749 * x[k-5]) + (-0.0636 * x[k-4]) + (-0.0435 * x[k-3]) + (-0.0415 * x[k-2]) + (0.0332 * x[k-1]) + (0.0029 * x[k-8]^2) + (-0.0011 * x[k-8] x[k-5]) + (-0.0012 * x[k-8] x[k-4]) + (-0.0040 * x[k-8] x[k-1]) + (-0.0030 * x[k-7] x[k-5]) + (0.0040 * x[k-7] x[k-4]) + (0.0016 * x[k-7] x[k-3]) + (-0.0013 * x[k-7] x[k-2]) + (0.0072 * x[k-7] x[k-1]) + (0.0030 * x[k-6] x[k-5]) + (0.0011 * x[k-6] x[k-3]) + (0.0060 * x[k-6] x[k-2]) + (-0.0035 * x[k-6] x[k-1]) + (-0.0060 * x[k-5]^2) + (-0.0055 * x[k-5] x[k-4]) + (0.0035 * x[k-5] x[k-3]) + (0.0032 * x[k-5] x[k-2]) + (0.0063 * x[k-5] x[k-1]) + (0.0017 * x[k-4]^2) + (-0.0076 * x[k-4] x[k-3]) + (-0.0027 * x[k-4] x[k-2]) + (0.0062 * x[k-3]^2) + (0.0064 * x[k-3] x[k-2]) + (0.0036 * x[k-3] x[k-1]) + (-0.0043 * x[k-2]^2) + (0.0020 * x[k-2] x[k-1]) + (-0.0048 * x[k-1]^2)
+Saved stability_plot.png
+
+=== PARSIMONY & STABILITY REPORT DATA ===
+1. Selected Model Order (p): 8
+   (This is the simplest model that achieves low error)
+2. Stability:
+   - RNN Mean Error over 100 steps: 0.0095
+   - Analytical Mean Error over 100 steps: 0.0064
+3. Temporal Relation:
+   See 'Identified Recurrence Relation' in log for F_theta.

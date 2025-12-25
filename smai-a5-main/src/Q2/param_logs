@@ -1,0 +1,105 @@
+
+=== 2.5 Parsimony: Exploring Parameter Count vs Performance ===
+Hidden:   2 | Epoch:  1 | Val MSE: 0.960783
+Hidden:   2 | Epoch:  2 | Val MSE: 0.966217
+Hidden:   2 | Epoch:  3 | Val MSE: 0.961534
+Hidden:   2 | Epoch:  4 | Val MSE: 0.960000
+Hidden:   2 | Epoch:  5 | Val MSE: 0.961023
+Hidden:   2 | Epoch:  6 | Val MSE: 0.962212
+Hidden:   2 | Epoch:  7 | Val MSE: 0.962885
+Hidden:   2 | Epoch:  8 | Val MSE: 0.960414
+Hidden:   2 | Epoch:  9 | Val MSE: 0.959984
+Hidden:   2 | Epoch: 10 | Val MSE: 0.960155
+Hidden:   2 | Params:    25 | Val MSE: 0.959984
+Hidden:   4 | Epoch:  1 | Val MSE: 0.961966
+Hidden:   4 | Epoch:  2 | Val MSE: 0.965758
+Hidden:   4 | Epoch:  3 | Val MSE: 0.961174
+Hidden:   4 | Epoch:  4 | Val MSE: 0.960040
+Hidden:   4 | Epoch:  5 | Val MSE: 0.962733
+Hidden:   4 | Epoch:  6 | Val MSE: 0.962380
+Hidden:   4 | Epoch:  7 | Val MSE: 0.959302
+Hidden:   4 | Epoch:  8 | Val MSE: 0.959977
+Hidden:   4 | Epoch:  9 | Val MSE: 0.958105
+Hidden:   4 | Epoch: 10 | Val MSE: 0.957776
+Hidden:   4 | Params:    49 | Val MSE: 0.957776
+Hidden:   8 | Epoch:  1 | Val MSE: 0.969570
+Hidden:   8 | Epoch:  2 | Val MSE: 0.961172
+Hidden:   8 | Epoch:  3 | Val MSE: 0.962960
+Hidden:   8 | Epoch:  4 | Val MSE: 0.958339
+Hidden:   8 | Epoch:  5 | Val MSE: 0.956448
+Hidden:   8 | Epoch:  6 | Val MSE: 0.962898
+Hidden:   8 | Epoch:  7 | Val MSE: 0.966857
+Hidden:   8 | Epoch:  8 | Val MSE: 0.954240
+Hidden:   8 | Epoch:  9 | Val MSE: 0.956023
+Hidden:   8 | Epoch: 10 | Val MSE: 0.959391
+Hidden:   8 | Params:    97 | Val MSE: 0.954240
+Hidden:  16 | Epoch:  1 | Val MSE: 0.958147
+Hidden:  16 | Epoch:  2 | Val MSE: 0.960306
+Hidden:  16 | Epoch:  3 | Val MSE: 0.955621
+Hidden:  16 | Epoch:  4 | Val MSE: 0.960998
+Hidden:  16 | Epoch:  5 | Val MSE: 0.961663
+Hidden:  16 | Epoch:  6 | Val MSE: 0.966462
+Hidden:  16 | Epoch:  7 | Val MSE: 0.956963
+Hidden:  16 | Epoch:  8 | Val MSE: 0.957603
+Hidden:  16 | Epoch:  9 | Val MSE: 0.957466
+Hidden:  16 | Epoch: 10 | Val MSE: 0.951374
+Hidden:  16 | Params:   193 | Val MSE: 0.951374
+Hidden:  32 | Epoch:  1 | Val MSE: 0.972927
+Hidden:  32 | Epoch:  2 | Val MSE: 0.963334
+Hidden:  32 | Epoch:  3 | Val MSE: 0.962438
+Hidden:  32 | Epoch:  4 | Val MSE: 0.959241
+Hidden:  32 | Epoch:  5 | Val MSE: 0.958850
+Hidden:  32 | Epoch:  6 | Val MSE: 0.955344
+Hidden:  32 | Epoch:  7 | Val MSE: 0.957195
+Hidden:  32 | Epoch:  8 | Val MSE: 0.954803
+Hidden:  32 | Epoch:  9 | Val MSE: 0.949390
+Hidden:  32 | Epoch: 10 | Val MSE: 0.952078
+Hidden:  32 | Params:   385 | Val MSE: 0.949390
+Hidden:  64 | Epoch:  1 | Val MSE: 0.970049
+Hidden:  64 | Epoch:  2 | Val MSE: 0.961868
+Hidden:  64 | Epoch:  3 | Val MSE: 0.960579
+Hidden:  64 | Epoch:  4 | Val MSE: 0.962070
+Hidden:  64 | Epoch:  5 | Val MSE: 0.961645
+Hidden:  64 | Epoch:  6 | Val MSE: 0.954628
+Hidden:  64 | Epoch:  7 | Val MSE: 0.968657
+Hidden:  64 | Epoch:  8 | Val MSE: 0.953307
+Hidden:  64 | Epoch:  9 | Val MSE: 0.947648
+Hidden:  64 | Epoch: 10 | Val MSE: 0.949761
+Hidden:  64 | Params:   769 | Val MSE: 0.947648
+Hidden: 128 | Epoch:  1 | Val MSE: 0.972198
+Hidden: 128 | Epoch:  2 | Val MSE: 0.966782
+Hidden: 128 | Epoch:  3 | Val MSE: 0.965985
+Hidden: 128 | Epoch:  4 | Val MSE: 0.973352
+Hidden: 128 | Epoch:  5 | Val MSE: 0.950212
+Hidden: 128 | Epoch:  6 | Val MSE: 0.963395
+Hidden: 128 | Epoch:  7 | Val MSE: 0.956868
+Hidden: 128 | Epoch:  8 | Val MSE: 0.957505
+Hidden: 128 | Epoch:  9 | Val MSE: 0.948962
+Hidden: 128 | Epoch: 10 | Val MSE: 0.956338
+Hidden: 128 | Params:  1537 | Val MSE: 0.948962
+
+=== 2.3 Analytical Recurrence Identification ===
+[Plot] Saved complexity_vs_accuracy.png
+[Plot] Saved stability_forecast.png
+[Plot] Saved error_accumulation.png
+
+==================================================
+           FINAL REPORT CHECKLIST
+==================================================
+1. Model Specifications:
+   - Type: MLP (Feed-Forward)
+   - Best Hidden Size: 64
+   - Parameter Count: 769
+   - History Length (p): 10
+------------------------------
+2. Identified Analytical Recurrence (F_theta):
+   x[k] = (-0.023 * x[k-9]) + (-0.074 * x[k-8]) + (0.154 * x[k-7]) + (0.089 * x[k-6]) + (-0.077 * x[k-5]) + (-0.065 * x[k-4]) + (-0.040 * x[k-3]) + (-0.038 * x[k-2]) + (0.031 * x[k-1])
+------------------------------
+3. Conclusions on Dataset:
+   - Complexity Analysis: The plot 'complexity_vs_accuracy.png' shows
+     how performance improves with model size until diminishing returns.
+   - Stability: The analytical model often provides better long-term stability
+     as it captures the exact physics, whereas MLPs may drift if not constrained.
+   - MLP Mean Error (100 steps): 0.0097
+   - Analytical Mean Error (100 steps): 0.0092
+==================================================
